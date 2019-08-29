@@ -1,7 +1,8 @@
 def main():
-    #problem1()
+    problem1()
     problem2()
 
+# !! : your file does not run becasue of syntax errors 
 
 # Problem 1:
 # Create a Movie class with the following properties/attributes: movieName, rating, and yearReleased.
@@ -25,13 +26,9 @@ class Movie:
 
     #OTHER PROPERTIES AND METHODS HERE
     def __str__(self):#this method Override the default str (to-String) method
-        my_instance_str = f" Properties Movie Class\n\nmovieName = {self.movieName}\n" \
-                          f"rating = {self.rating}\n" \
-                          f"yearReleased = {self.yearReleased}\n" \
-
-
+        my_instance_str = f" Properties Movie Class\n\nmovieName = {self.movieName}\nrating = {self.rating}\nyearReleased = {self.yearReleased}\n" 
         return my_instance_str
-
+        # !! : instance string is a varibale, you can't list three seperate f strings as a varibale definition 
 
 def problem1():
     #Create class instance(s) and perform other activities in/from this function
@@ -68,9 +65,8 @@ class Product:
 
 
     def __str__(self): #this method Override the default str (to-String) method
-        my_instance_str = f" Properties of Product Class\n\nprice = {self.price}\n" \ 
-                         f"quantity = {self.quantity}\n" \
-                         f"name = {self.name}\n" \
+        my_instance_str = f" Properties of Product Class\n\nprice = {self.price}\nquantity = {self.quantity}\nname = {self.name}\n" 
+        # !! : instance string is a varibale, you can't list three seperate f strings as a varibale definition 
 
 
         return my_instance_str
